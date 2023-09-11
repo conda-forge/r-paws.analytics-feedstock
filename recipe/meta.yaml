@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/paws.analytics_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/paws.analytics/paws.analytics_{{ version }}.tar.gz
-  sha256: 9c51c0d7c4b075c4121b62cad601bd7e2a076fbcb727877d2634904bec0b5362
+  sha256: 64a5f1d781e5923294b9075b88ec925259d0748f530bf7ce3a65e8093aeaf1f4
 
 build:
   merge_build_host: true  # [win]
