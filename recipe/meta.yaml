@@ -1,6 +1,5 @@
 {% set version = "0.6.0" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-paws.analytics
@@ -13,8 +12,7 @@ source:
   sha256: 6df86ba9d0a41f6c3b729a4179a1fd8157161c480b08ad3e187779561771c570
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
