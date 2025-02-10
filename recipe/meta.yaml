@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/paws.analytics_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/paws.analytics/paws.analytics_{{ version }}.tar.gz
-  sha256: faea21ae144f607702c87646685c59ddce85a09b455968a315b8e1d73d27312d
+  sha256: 90f2e2c51e111287953695b71ff39c34727f441badb769810b5f32e8d40c9ae9
 
 build:
   number: 0
@@ -24,10 +24,10 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-paws.common >=0.3.0
+    - r-paws.common >=0.8.0
   run:
     - r-base
-    - r-paws.common >=0.3.0
+    - r-paws.common >=0.8.0
 
 test:
   commands:
